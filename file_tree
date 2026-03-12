@@ -1,0 +1,21 @@
+# File Tree: CraditCard_Fraud
+
+```
+├── 📁 .fraud_env
+|
+├── 📁 Data
+│   └── 📦 creditcardfraud.zip
+|
+├── 📁 Notebook
+│   └── 📄 source.ipynb
+|
+├── 📁 Resources
+│   └── 📝 notes1.md
+|
+├── 📁 src
+│   └── 🐍 reference1.py
+|
+├── ⚙️ .gitignore
+├── 📝 README.md
+└── 📄 requirements.txt
+```
