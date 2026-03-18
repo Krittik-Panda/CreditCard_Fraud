@@ -169,7 +169,16 @@ async function runSingleCheck() {
   setTimeout(async () => {
   hideLoading();
 
-  const row = { ...(State.singleFileData || {}), Amount: amount, Time: time };
+  const base = State.singleFileData || {};
+
+  const row = {
+    Time: time,
+    Amount: amount,
+  };
+
+  for (let i = 1; i <= 28; i++) {
+    row['V' + i] = base['V' + i];
+  }
   const filled = fillMissingFeatures(row);
 
   const prob = await scoreSingleRow(filled);
